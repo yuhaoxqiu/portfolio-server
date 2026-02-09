@@ -1,0 +1,8 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "8080:3001"
+    environment:
+      - NODE_ENV=production
+    restart: always

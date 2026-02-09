@@ -1,0 +1,44 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "This repositoy will contain the frontend for my engineering portfolio.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev:server": "nodemon src/server/index.ts",
+    "dev:client": "vite",
+    "dev": "npm run dev:client",
+    "build:client": "vite build",
+    "build:server": "tsc src/server/index.ts --outDir dist/server --esModuleInterop --module ESNext --moduleResolution node --target ES2020",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node dist/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuhaoxqiu/portfolio-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuhaoxqiu/portfolio-server/issues"
+  },
+  "homepage": "https://github.com/yuhaoxqiu/portfolio-server#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.2",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.3",
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
